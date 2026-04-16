@@ -11,7 +11,7 @@ export default function Footer() {
             {/* Left Section - Company Info */}
             <div className="footer-section footer-about">
               <div className="company-logo-text">
-                <img src="/images/Secuur-Beeldmerk.png" alt="Secuur BV Logo" className="footer-logo" />
+                <img src="./images/Secuur-Beeldmerk.png" alt="Secuur BV Logo" className="footer-logo" />
               </div>
               <p>
                 <strong>Secuur Brandveiligheid B.V.</strong><br />
@@ -50,7 +50,7 @@ export default function Footer() {
                 Secuur Brandveiligheid B.V. is een<br />
                 <strong>onderdeel van</strong>
               </p>
-              <img src="/images/METZ-logo-new-wit-600x202-1.png" alt="Metz Verbouw" className="metz-logo" />
+              <img src="./images/METZ-logo-new-wit-600x202-1.png" alt="Metz Verbouw" className="metz-logo" />
             </div>
           </div>
         </div>

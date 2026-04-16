@@ -25,7 +25,7 @@ export const siteData = {
     hero: {
       title: "Secuur Brandveiligheid",
       subtitle: "Extra tijd, wanneer elke seconde telt.",
-      backgroundImage: "/images/220330-Secuur-BV-header1.jpg",
+      backgroundImage: "./images/220330-Secuur-BV-header1.jpg",
       cta: "Neem Contact Op"
     },
 
@@ -39,21 +39,21 @@ export const siteData = {
       items: [
         {
           id: 1,
-          image: "/images/220330-Secuur-BV-home-onderzoek-en-advies.jpg",
+          image: "./images/220330-Secuur-BV-home-onderzoek-en-advies.jpg",
           title: "Onderzoek en advies",
           excerpt: "Onderzoek en advies naar brandgevaarlijke plekken is de basis voor ons werk. Maar voordat wij ermee aan de slag gaan kijken we vooral naar mogelijk betere alternatieven.",
           link: "/werkwijze/onderzoek-en-advies"
         },
         {
           id: 2,
-          image: "/images/220330-Secuur-BV-Werkwijze-Uitvoering-1.jpg",
+          image: "./images/220330-Secuur-BV-Werkwijze-Uitvoering-1.jpg",
           title: "De uitvoering",
           excerpt: "Wij voeren de werkzaamheden altijd in samenwerking uit. Daarbij zullen we overlast voorkomen of tenminste beperken. Onze werkzaamheden zijn bovendien via een digitaal logboek direct in beeld te volgen.",
           link: "/werkwijze/de-uitvoering"
         },
         {
           id: 3,
-          image: "/images/220330-Secuur-BV-Werkwijze-Eindrapport-1.jpg",
+          image: "./images/220330-Secuur-BV-Werkwijze-Eindrapport-1.jpg",
           title: "Het eindrapport",
           excerpt: "Het eindrapport dat uit ons logboek komt is ook voorzien van alle certificaten en kan direct aan het bevoegd gezag worden voorgelegd.",
           link: "/werkwijze/het-eindrapport"
@@ -65,15 +65,15 @@ export const siteData = {
       title: "Certificeringen",
       items: [
         {
-          image: "/images/is04001.png",
+          image: "./images/is04001.png",
           alt: "ISO 4001"
         },
         {
-          image: "/images/vca-blackwhite.png",
+          image: "./images/vca-blackwhite.png",
           alt: "VCA"
         },
         {
-          image: "/images/iso9001.png",
+          image: "./images/iso9001.png",
           alt: "ISO 9001"
         }
       ]
@@ -82,7 +82,7 @@ export const siteData = {
     safetySection: {
       title: "Veiligheid heeft een tijd",
       content: "Voor ons zijn de belangrijkste stappen om veiligheid de tijd te geven allereerst het onderzoek & advies. Vervolgens zorgen wij voor de concrete uitvoering van de maatregelen, waar mogelijk met alternatieve oplossingen. Dat doen we vanuit samenwerking omdat we de beste uitvoering willen realiseren én om overlast te voorkomen. Alles leggen we vast in een digitaal logboek waarin ook alle certificaten zijn te vinden. Het eindrapport dat daaruit volgt kunnen wij direct aan het bevoegd gezag voorleggen.",
-      backgroundImage: "/images/220330-Secuur-BV-Werkwijze-visual-3.jpg"
+      backgroundImage: "./images/220330-Secuur-BV-Werkwijze-visual-3.jpg"
     }
   },
 
@@ -100,21 +100,21 @@ export const siteData = {
       {
         id: 1,
         title: "Onderzoek en Advies",
-        image: "/images/220330-Secuur-BV-Werkwijze-Onderzoek-en-Advies-2.jpg",
+        image: "./images/220330-Secuur-BV-Werkwijze-Onderzoek-en-Advies-2.jpg",
         content: "Onderzoek en advies naar brandgevaarlijke plekken is de basis voor ons werk. Maar voordat wij ermee aan de slag gaan kijken we vooral naar mogelijk betere alternatieven.",
         link: "/werkwijze/onderzoek-en-advies"
       },
       {
         id: 2,
         title: "De Uitvoering",
-        image: "/images/220330-Secuur-BV-Werkwijze-Uitvoering-1.jpg",
+        image: "./images/220330-Secuur-BV-Werkwijze-Uitvoering-1.jpg",
         content: "Wij voeren de werkzaamheden altijd in samenwerking uit. Daarbij zullen we overlast voorkomen of tenminste beperken. Onze werkzaamheden zijn bovendien via een digitaal logboek direct in beeld te volgen.",
         link: "/werkwijze/de-uitvoering"
       },
       {
         id: 3,
         title: "Het Eindrapport",
-        image: "/images/220330-Secuur-BV-Werkwijze-Eindrapport-1.jpg",
+        image: "./images/220330-Secuur-BV-Werkwijze-Eindrapport-1.jpg",
         content: "Het eindrapport dat uit ons logboek komt is ook voorzien van alle certificaten en kan direct aan het bevoegd gezag worden voorgelegd.",
         link: "/werkwijze/het-eindrapport"
       }
@@ -126,7 +126,7 @@ export const siteData = {
     {
       id: 1,
       title: "Ziekenhuis Erasmus MC",
-      image: "/images/220330-Secuur-BV-Projecten-Erasmus.jpg",
+      image: "./images/220330-Secuur-BV-Projecten-Erasmus.jpg",
       excerpt: "Met het Erasmus MC hebben wij een contract gesloten, om gedurende 10 jaar alle bouwkundig onderhoud te plegen en storingen te verhelpen.",
       content: "Bij het grootste ziekenhuis van Nederland werken wij gezamenlijk aan het onderhoud van alle brandveiligheidsvoorzieningen. Het Erasmus MC is een groot ziekenhuis met verschillende locaties, waar dagelijks veel patiënten en bezoekers komen. Daarom is het uiterst belangrijk dat alle brandveiligheidsmaatregelen volledig functionaal zijn. Wij hebben een 10-jarig contract met het ziekenhuis waarbij wij alle bouwkundige brandveiligheid onderhouden en storingen onmiddellijk verhelpen.",
       link: "/projecten/ziekenhuis-erasmus-mc"
@@ -134,7 +134,7 @@ export const siteData = {
     {
       id: 2,
       title: "Parkeergarage Capelle aan den IJssel",
-      image: "/images/220330-Secuur-BV-Projecten-Capelle.jpg",
+      image: "./images/220330-Secuur-BV-Projecten-Capelle.jpg",
       excerpt: "De oudere parkeergarage in Capelle aan den IJssel was weliswaar nog niet afgeschreven, maar de plafonds vertoonden slijtage waardoor er instortingsgevaar dreigde.",
       content: "De parkeergarage in Capelle aan den IJssel was gebouwd in de jaren negentig. Na ruim 20 jaar waren echter de betonnen kastplafonds ernstig gehavend. De spanten vertoonden roest en er was instortingsgevaar. Door een slimme oplossing met een ondersteunende constructie hebben we voorkomen dat de hele parkeergarage gesloten moest worden. In plaats daarvan konden we gefaseerd de plafonds vervangen en saneren.",
       link: "/projecten/parkeergarage-capelle"
@@ -149,12 +149,12 @@ export const siteData = {
       {
         title: "Vakmanschap",
         content: "Onze medewerkers zijn deskundigen op hun vakgebied. Zij hebben jarenlange ervaring en worden regelmatig bijgeschoold.",
-        image: "/images/220330-Secuur-BV-Over-ons-Vakmensen.jpg"
+        image: "./images/220330-Secuur-BV-Over-ons-Vakmensen.jpg"
       },
       {
         title: "Materialen",
         content: "Wij werken alleen met materialen van topkwaliteit. Dit garandeert dat uw brandveiligheidsvoorzieningen lang meegaan.",
-        image: "/images/220330-Secuur-BV-Over-ons-Materialen.jpg"
+        image: "./images/220330-Secuur-BV-Over-ons-Materialen.jpg"
       },
       {
         title: "Partnership",
@@ -171,12 +171,12 @@ export const siteData = {
       {
         title: "Professioneel Onderzoek",
         content: "Onze professionals voeren grondige onderzoeken uit naar mogelijke brandgevaren.",
-        image: "/images/220330-Secuur-BV-Veiligheid-Visual-1.jpg"
+        image: "./images/220330-Secuur-BV-Veiligheid-Visual-1.jpg"
       },
       {
         title: "Expert Advies",
         content: "Wij geven deskundig advies op basis van jarenlange ervaring en kennis van regelgeving.",
-        image: "/images/220330-Secuur-BV-Veiligheid-visual-2.jpg"
+        image: "./images/220330-Secuur-BV-Veiligheid-visual-2.jpg"
       }
     ]
   },
@@ -186,7 +186,7 @@ export const siteData = {
     {
       id: 1,
       title: "Enthousiaste Monteur / Applicateur",
-      image: "/images/Vacature-Uitvoerder.jpeg",
+      image: "./images/Vacature-Uitvoerder.jpeg",
       excerpt: "Wij zoeken een enthousiaste monteur die samen met ons de brand veiligheid verbetert.",
       content: "Ben je een vakman/vakvrouw met ervaring in het bouwvak? Wij zoeken een enthousiaste monteur/applicateur die wil groeien met ons bedrijf...",
       link: "/vacatures/monteur-applicateur"
@@ -194,7 +194,7 @@ export const siteData = {
     {
       id: 2,
       title: "Werkvoorbereider / Calculator",
-      image: "/images/Vacature-Werkvoorbereider-Calculator.jpeg",
+      image: "./images/Vacature-Werkvoorbereider-Calculator.jpeg",
       excerpt: "Wij zoeken iemand met affiniteit voor planning, calculatie en organisatie.",
       content: "Heb je ervaring in planning en calculatie? Wij zoeken een werkvoorbereider/calculator die ons helpt projecten optimaal voor te bereiden...",
       link: "/vacatures/werkvoorbereider"
@@ -207,19 +207,19 @@ export const siteData = {
       id: 1,
       title: "Onderzoek & Advies",
       description: "Wij voeren professioneel onderzoek uit naar brandgevaarlijke plekken en geven advies op basis van jarenlange ervaring.",
-      image: "/images/220330-Secuur-BV-icon-Onderzoek-en-advies.png"
+      image: "./images/220330-Secuur-BV-icon-Onderzoek-en-advies.png"
     },
     {
       id: 2,
       title: "De Uitvoering",
       description: "Onze gespecialiseerde teams voeren de maatregelen uit met minimale overlast en maximale vakmanschap.",
-      image: "/images/220330-Secuur-BV-icon-Uitvoering.png"
+      image: "./images/220330-Secuur-BV-icon-Uitvoering.png"
     },
     {
       id: 3,
       title: "Het Eindrapport",
       description: "Volledig gedocumenteerde resultaten met alle certificaten die klaar zijn voor het bevoegd gezag.",
-      image: "/images/220330-Secuur-BV-icon-Eindrapport.png"
+      image: "./images/220330-Secuur-BV-icon-Eindrapport.png"
     }
   ]
 };
