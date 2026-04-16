@@ -1,0 +1,467 @@
+/* ============================================
+   NAVIGATION - Professional Navigation Bar
+   ============================================ */
+
+.navbar {
+  background: #1e1f1c !important;
+  border-bottom: 3px solid #FF6600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-default {
+  border: none;
+  background: inherit;
+}
+
+/* Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  height: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* ============================================
+   NAVBAR HEADER & LOGO
+   ============================================ */
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-brand:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .logo-image {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    display: inline;
+  }
+}
+
+/* ============================================
+   NAVBAR TOGGLE (Mobile Menu Button)
+   ============================================ */
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.navbar-toggle .icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #FF6600;
+  margin: 4px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.navbar-toggle:hover .icon-bar {
+  background-color: #fff;
+}
+
+@media (max-width: 970px) {
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+/* ============================================
+   NAVBAR COLLAPSE (Menu Container)
+   ============================================ */
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  padding: 0 20px;
+  gap: 0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar-collapse.in {
+  display: flex;
+}
+
+@media (max-width: 970px) {
+  .navbar-collapse {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #1a1a1a;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-collapse.in {
+    display: flex;
+  }
+}
+
+/* ============================================
+   NAVBAR MENU
+   ============================================ */
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 0;
+  flex: 1;
+  height: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  flex: 1;
+}
+
+@media (max-width: 970px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+}
+
+/* ============================================
+   MENU ITEMS
+   ============================================ */
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu-item > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 18px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+}
+
+.menu-item > a:hover {
+  color: #FF6600;
+  background-color: rgba(255, 102, 0, 0.08);
+  border-bottom-color: #FF6600;
+  text-decoration: none;
+}
+
+.menu-item.active > a {
+  color: #FF6600;
+  border-bottom-color: #FF6600;
+  background-color: rgba(255, 102, 0, 0.08);
+}
+
+/* Menu title for dropdowns */
+.menu-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 18px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  position: relative;
+}
+
+.menu-item.dropdown:hover > .menu-title {
+  color: #FF6600;
+  background-color: rgba(255, 102, 0, 0.08);
+}
+
+.menu-title::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item.dropdown:hover .menu-title::after {
+  transform: rotate(-135deg);
+}
+
+/* ============================================
+   DROPDOWN MENU
+   ============================================ */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0f0f0f;
+  border: 1px solid #FF6600;
+  border-top: 3px solid #FF6600;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 250px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.menu-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #333;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 102, 0, 0.15);
+  color: #FF6600;
+  padding-left: 25px;
+}
+
+@media (max-width: 970px) {
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: #0a0a0a;
+    border: none;
+    border-left: 3px solid #FF6600;
+    box-shadow: none;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .menu-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    border-bottom: none;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 15px;
+  }
+}
+
+/* ============================================
+   CONTACT BUTTON
+   ============================================ */
+
+.header-contact-button {
+  margin-left: auto;
+  padding-left: 20px;
+  flex-shrink: 0;
+}
+
+.header-contact-button .btn {
+  padding: 10px 24px;
+  background-color: #FF6600;
+  color: #fff;
+  border: 2px solid #FF6600;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header-contact-button .btn:hover {
+  background-color: #e55a00;
+  border-color: #e55a00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+  text-decoration: none;
+}
+
+.header-contact-button .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 102, 0, 0.3);
+}
+
+@media (max-width: 970px) {
+  .header-contact-button {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-contact-button .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .navbar-header {
+    padding: 0 15px;
+  }
+
+  .navbar-container {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .logo-image {
+    height: 45px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .menu-item > a {
+    padding: 0 15px;
+    font-size: 13px;
+  }
+
+  .menu-title {
+    padding: 0 15px;
+    font-size: 13px;
+  }
+
+  .navbar-collapse {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    height: 40px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .menu-item > a,
+  .menu-title {
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .header-contact-button .btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

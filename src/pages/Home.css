@@ -1,0 +1,648 @@
+/* ============================================
+   HOME PAGE - Professional Design
+   ============================================ */
+
+/* Container Structure */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   HERO SECTION - Video Background with Logo Overlay
+   ============================================ */
+
+.hero-section {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Hero Video Wrapper - Full Bleed */
+.hero-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  transform: translate(-50%, -50%);
+  border: none;
+  z-index: 1;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+/* Hero Overlay (dark gradient on top of video) */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Logo Overlay - Positioned on top of video */
+.hero-logo-overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 20px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.hero-logo-image {
+  max-width: 550px;
+  max-height: 550px;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.hero-cta .btn {
+  padding: 15px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #FF6600;
+  color: white;
+  border-color: #FF6600;
+}
+
+.btn-primary:hover {
+  background-color: #e55a00;
+  border-color: #e55a00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.intro-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  letter-spacing: -1px;
+}
+
+.intro-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #555;
+}
+
+.intro-text strong {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.intro-text em {
+  color: #FF6600;
+  font-style: italic;
+}
+
+/* ============================================
+   NEWS/WERKWIJZE SECTION
+   ============================================ */
+
+.news-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.news-section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+/* Werkwijze Grid - 3 Cards */
+.werkwijze-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.werkwijze-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.werkwijze-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.werkwijze-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #FF6600;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.werkwijze-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.werkwijze-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.werkwijze-card p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.link-arrow {
+  color: #FF6600;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link-arrow:hover {
+  color: #e55a00;
+  margin-right: -10px;
+  margin-left: 10px;
+}
+
+
+
+/* ============================================
+   CERTIFICATES SECTION
+   ============================================ */
+
+.certificates-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.certificates-section h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+  font-weight: 800;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.certificate {
+  margin: 0;
+  padding: 1.5rem;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.certificate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.certificate img {
+  max-width: 110px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.certificate:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================================
+   SAFETY SECTION
+   ============================================ */
+
+.safety-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.safety-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-weight: 800;
+  text-align: left;
+}
+
+.safety-title-image {
+  order: 1;
+}
+
+.safety-image {
+  margin-top: 1.5rem;
+}
+
+.safety-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.safety-wrapper::before {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.safety-text {
+  order: 2;
+}
+
+.safety-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.safety-text p {
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.safety-image {
+  order: 2;
+}
+
+.safety-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================================
+   FINAL CTA SECTION
+   ============================================ */
+
+.final-cta-section {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  border-top: 3px solid #FF6600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.final-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 1;
+}
+
+.final-cta-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.final-cta-content {
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.final-cta-section h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.final-cta-section strong {
+  color: #FF6600;
+  font-weight: 800;
+}
+
+.final-cta-section p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+.final-cta-image {
+  display: none;
+}
+
+.final-cta-image img {
+  display: none;
+}
+
+.final-cta-section .btn {
+  margin-top: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .hero-video {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+  }
+
+  .hero-logo-image {
+    max-width: 450px;
+    max-height: 450px;
+    width: 85%;
+  }
+
+  .werkwijze-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .final-cta-inner {
+    gap: 3rem;
+  }
+
+  .safety-wrapper {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .hero-video {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+  }
+
+  .hero-logo-overlay {
+    padding-left: 20px;
+  }
+
+  .hero-logo-image {
+    max-width: 350px;
+    max-height: 350px;
+    width: 80%;
+  }
+
+  .werkwijze-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .werkwijze-card {
+    padding: 1.5rem;
+  }
+
+  .werkwijze-image {
+    height: 200px;
+  }
+
+  .final-cta-inner {
+    padding: 2rem;
+  }
+
+  .final-cta-section {
+    height: 300px;
+  }
+
+  .final-cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .safety-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .safety-title-image {
+    order: 2;
+  }
+
+  .safety-text {
+    order: 1;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .hero-video {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+  }
+
+  .hero-logo-overlay {
+    padding-left: 20px;
+  }
+
+  .hero-logo-image {
+    max-width: 280px;
+    max-height: 280px;
+    width: 75%;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .news-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .werkwijze-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .werkwijze-image {
+    height: 150px;
+  }
+
+  .final-cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .final-cta-section {
+    height: 250px;
+  }
+
+  .final-cta-inner {
+    padding: 1.5rem;
+  }
+
+  .hero-logo-image {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-video {
+    width: 100%;
+    height: 100%;
+  }
+}
