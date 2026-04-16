@@ -44,7 +44,7 @@ export default function Navigation() {
           </button>
           <Link className="navbar-brand" to="/" onClick={closeMenu}>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/200203-Secuur-BV-logo-312x77-1.png`}
+              src="/secuurbv/images/200203-Secuur-BV-logo-312x77-1.png"
               alt="Secuur BV Logo" 
               className="logo-image"
             />

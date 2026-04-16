@@ -1,8 +1,9 @@
 // Secuur BV Website Data
 // All content centralized for easy management
 
-// Helper function for image paths (works with GitHub Pages subdir)
-const imageUrl = (path) => `${process.env.PUBLIC_URL}${path}`;
+// For GitHub Pages, images are at /secuurbv/images/
+const BASE_URL = '/secuurbv';
+const imageUrl = (path) => `${BASE_URL}${path}`;
 
 export const siteData = {
   company: {

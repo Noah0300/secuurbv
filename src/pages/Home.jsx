@@ -25,7 +25,7 @@ export default function Home() {
 
         {/* Logo Overlay on top of video */}
         <div className="hero-logo-overlay">
-          <img src={`${process.env.PUBLIC_URL}/images/extra-tijd-header.svg`} alt="Extra Tijd Logo" className="hero-logo-image" />
+          <img src="/secuurbv/images/extra-tijd-header.svg" alt="Extra Tijd Logo" className="hero-logo-image" />
         </div>
       </section>
 
