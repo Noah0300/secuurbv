@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/secuurbv/static/css/main.d9757bf5.css",
-    "main.js": "/secuurbv/static/js/main.20f7fd46.js",
+    "main.js": "/secuurbv/static/js/main.d8d94fe6.js",
     "static/media/hero-header.jpg": "/secuurbv/static/media/hero-header.ab253fa09f9d2cc70924.jpg",
     "index.html": "/secuurbv/index.html",
     "main.d9757bf5.css.map": "/secuurbv/static/css/main.d9757bf5.css.map",
-    "main.20f7fd46.js.map": "/secuurbv/static/js/main.20f7fd46.js.map"
+    "main.d8d94fe6.js.map": "/secuurbv/static/js/main.d8d94fe6.js.map"
   },
   "entrypoints": [
     "static/css/main.d9757bf5.css",
-    "static/js/main.20f7fd46.js"
+    "static/js/main.d8d94fe6.js"
   ]
 }
