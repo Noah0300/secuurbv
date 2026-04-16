@@ -40,9 +40,9 @@ export default function Vacatures() {
       <section className="section final-cta-section">
         <div className="container">
           <h2>
-            Enthousiast geworden?
+            Extra tijd, <span className="highlight">wanneer elke seconde telt</span>
           </h2>
-          <Link to="/contact" className="btn btn-large">
+          <Link to="/contact" className="btn btn-primary">
             Neem contact op
           </Link>
         </div>

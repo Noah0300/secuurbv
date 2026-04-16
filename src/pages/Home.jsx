@@ -80,13 +80,17 @@ export default function Home() {
       <section className="section safety-section">
         <div className="container">
           <div className="safety-wrapper">
-            <div className="safety-title-image">
-              <h2>{homepage.safetySection.title}</h2>
-              <div className="safety-image">
-                <img src={homepage.safetySection.backgroundImage} alt="Veiligheid" />
-              </div>
+            <div className="safety-video">
+              <iframe
+                className="safety-video-embed"
+                src="https://www.youtube.com/embed/qHVwcZWSJT0?autoplay=1&mute=1&loop=1&playlist=qHVwcZWSJT0&controls=0&showinfo=0"
+                title="Secuur Brandveiligheid"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
             <div className="safety-text">
+              <h2>{homepage.safetySection.title}</h2>
               <p>{homepage.safetySection.content}</p>
               <Link to="/contact" className="btn btn-primary">
                 Contact

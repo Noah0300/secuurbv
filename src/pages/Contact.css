@@ -45,8 +45,123 @@
   text-decoration: underline;
 }
 
+/* Map Section */
+.contact-map {
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.map-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  border-top: 3px solid #FF6600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.final-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 1;
+}
+
+.final-cta-section .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.final-cta-section h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.final-cta-section .highlight {
+  color: #FF6600;
+  display: block;
+}
+
+.final-cta-section .btn-primary {
+  padding: 15px 40px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background-color: #FF6600;
+  color: white;
+  border: 2px solid #FF6600;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.final-cta-section .btn-primary:hover {
+  background-color: #e55a00;
+  border-color: #e55a00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
+}
+
 @media (max-width: 768px) {
   .contact-info {
     margin-top: 30px;
+  }
+
+  .map-container {
+    height: 400px;
+  }
+
+  .final-cta-section {
+    height: 300px;
+  }
+
+  .final-cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-cta-section {
+    height: 250px;
+  }
+
+  .final-cta-section h2 {
+    font-size: 1.6rem;
   }
 }
