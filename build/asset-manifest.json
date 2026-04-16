@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/secuurbv/static/css/main.e27640de.css",
+    "main.js": "/secuurbv/static/js/main.ea2da90e.js",
+    "static/media/hero-header.jpg": "/secuurbv/static/media/hero-header.ab253fa09f9d2cc70924.jpg",
+    "index.html": "/secuurbv/index.html",
+    "main.e27640de.css.map": "/secuurbv/static/css/main.e27640de.css.map",
+    "main.ea2da90e.js.map": "/secuurbv/static/js/main.ea2da90e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e27640de.css",
+    "static/js/main.ea2da90e.js"
+  ]
+}

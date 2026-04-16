@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+# /build  - Keeping build folder for GitHub Pages deployment
 
 # misc
 .DS_Store
