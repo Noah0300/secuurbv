@@ -13,15 +13,7 @@ export default function Navigation() {
   const menuItems = [
     { path: '/', label: 'Home' },
     { path: '/over-ons', label: 'Over ons' },
-    {
-      label: 'Werkwijze',
-      submenu: [
-        { path: '/werkwijze', label: 'Werkwijze' },
-        { path: '/werkwijze/onderzoek-en-advies', label: 'Onderzoek en advies' },
-        { path: '/werkwijze/de-uitvoering', label: 'De uitvoering' },
-        { path: '/werkwijze/het-eindrapport', label: 'Het eindrapport' }
-      ]
-    },
+    { path: '/werkwijze', label: 'Werkwijze' },
     { path: '/veiligheid', label: 'Veiligheid' },
     { path: '/projecten', label: 'Projecten' },
     { path: '/vacatures', label: 'Vacatures' }
@@ -57,26 +49,9 @@ export default function Navigation() {
             {menuItems.map((item, idx) => (
               <li
                 key={idx}
-                className={`menu-item ${item.submenu ? 'dropdown' : ''} ${
-                  item.path && isActive(item.path) ? 'active' : ''
-                }`}
+                className={`menu-item ${item.path && isActive(item.path) ? 'active' : ''}`}
               >
-                {item.submenu ? (
-                  <>
-                    <span className="menu-title">{item.label}</span>
-                    <ul className="dropdown-menu">
-                      {item.submenu.map((subitem, sidx) => (
-                        <li key={sidx}>
-                          <Link to={subitem.path} onClick={closeMenu}>
-                            {subitem.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  <Link to={item.path} onClick={closeMenu}>{item.label}</Link>
-                )}
+                <Link to={item.path} onClick={closeMenu}>{item.label}</Link>
               </li>
             ))}
           </ul>

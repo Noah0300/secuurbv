@@ -232,129 +232,6 @@
   background-color: rgba(255, 102, 0, 0.08);
 }
 
-/* Menu title for dropdowns */
-.menu-title {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 18px;
-  color: #e0e0e0;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  user-select: none;
-  position: relative;
-}
-
-.menu-item.dropdown:hover > .menu-title {
-  color: #FF6600;
-  background-color: rgba(255, 102, 0, 0.08);
-}
-
-.menu-title::after {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(-45deg);
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-.menu-item.dropdown:hover .menu-title::after {
-  transform: rotate(-135deg);
-}
-
-/* ============================================
-   DROPDOWN MENU
-   ============================================ */
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #0f0f0f;
-  border: 1px solid #FF6600;
-  border-top: 3px solid #FF6600;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 250px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  z-index: 100;
-}
-
-.menu-item.dropdown:hover .dropdown-menu {
-  display: block;
-  animation: slideDown 0.3s ease;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.dropdown-menu li {
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #333;
-}
-
-.dropdown-menu li:last-child {
-  border-bottom: none;
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 12px 20px;
-  color: #e0e0e0;
-  text-decoration: none;
-  font-size: 13px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.dropdown-menu a:hover {
-  background-color: rgba(255, 102, 0, 0.15);
-  color: #FF6600;
-  padding-left: 25px;
-}
-
-@media (max-width: 970px) {
-  .dropdown-menu {
-    position: static;
-    display: none;
-    background: #0a0a0a;
-    border: none;
-    border-left: 3px solid #FF6600;
-    box-shadow: none;
-    margin-left: 20px;
-    margin-top: 5px;
-  }
-
-  .menu-item.dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown-menu li {
-    border-bottom: none;
-  }
-
-  .dropdown-menu a {
-    padding: 10px 15px;
-  }
-}
-
 /* ============================================
    CONTACT BUTTON
    ============================================ */
@@ -435,11 +312,6 @@
     font-size: 13px;
   }
 
-  .menu-title {
-    padding: 0 15px;
-    font-size: 13px;
-  }
-
   .navbar-collapse {
     padding: 15px;
   }
@@ -454,8 +326,7 @@
     display: none;
   }
 
-  .menu-item > a,
-  .menu-title {
+  .menu-item > a {
     padding: 0 12px;
     font-size: 12px;
   }

@@ -5,7 +5,8 @@
 .werkwijze-header {
   background: linear-gradient(135deg, rgba(29, 30, 28, 0.96), rgba(49, 49, 49, 0.92));
   color: #fff;
-  border-bottom: 4px solid #f06923;
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 .werkwijze-header h1,
@@ -25,7 +26,7 @@
 }
 
 .werkwijze-content {
-  padding-top: 70px;
+  padding-top: 0;
   padding-bottom: 70px;
 }
 
