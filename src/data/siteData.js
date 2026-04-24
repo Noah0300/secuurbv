@@ -37,21 +37,21 @@ export const siteData = {
       content: "Wij zijn Secuur Brandveiligheid BV. Wij zijn gespecialiseerd in passieve en bouwkundige brandveiligheid in elk pand. Wij zijn een zusterbedrijf van Metz Nederland BV. Dat is te zien in de manier waarop wij projecten aanpakken en uitvoeren. Wij zorgen voor een optimale samenwerking en een maximale informatievoorziening aan alle betrokkenen. Wij houden meer dan anderen rekening met de omgeving waarin wij uw opdracht uitvoeren."
     },
 
-    news: {
+          link: "/werkwijze"
       title: "Het Laatste Nieuws",
       subtitle: "Blijf op de hoogte van de laatste ontwikkelingen binnen Secuur Brandveiligheid B.V.",
       items: [
         {
           id: 1,
           image: imageUrl('/images/220330-Secuur-BV-home-onderzoek-en-advies.jpg'),
-          title: "Onderzoek en advies",
+          link: "/werkwijze"
           excerpt: "Onderzoek en advies naar brandgevaarlijke plekken is de basis voor ons werk. Maar voordat wij ermee aan de slag gaan kijken we vooral naar mogelijk betere alternatieven.",
           link: "/werkwijze"
         },
         {
           id: 2,
           image: imageUrl('/images/220330-Secuur-BV-Werkwijze-Uitvoering-1.jpg'),
-          title: "De uitvoering",
+          link: "/werkwijze"
           excerpt: "Wij voeren de werkzaamheden altijd in samenwerking uit. Daarbij zullen we overlast voorkomen of tenminste beperken. Onze werkzaamheden zijn bovendien via een digitaal logboek direct in beeld te volgen.",
           link: "/werkwijze"
         },
