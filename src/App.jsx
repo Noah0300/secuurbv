@@ -22,9 +22,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/over-ons" element={<OverOns />} />
           <Route path="/werkwijze" element={<Werkwijze />} />
-          <Route path="/werkwijze/onderzoek-en-advies" element={<Werkwijze />} />
-          <Route path="/werkwijze/de-uitvoering" element={<Werkwijze />} />
-          <Route path="/werkwijze/het-eindrapport" element={<Werkwijze />} />
+          <Route path="/werkwijze/onderzoek-en-advies" element={<Navigate to="/werkwijze" replace />} />
+          <Route path="/werkwijze/de-uitvoering" element={<Navigate to="/werkwijze" replace />} />
+          <Route path="/werkwijze/het-eindrapport" element={<Navigate to="/werkwijze" replace />} />
           <Route path="/veiligheid" element={<Veiligheid />} />
           <Route path="/projecten" element={<Projecten />} />
           <Route path="/vacatures" element={<Vacatures />} />

@@ -46,21 +46,21 @@ export const siteData = {
           image: imageUrl('/images/220330-Secuur-BV-home-onderzoek-en-advies.jpg'),
           title: "Onderzoek en advies",
           excerpt: "Onderzoek en advies naar brandgevaarlijke plekken is de basis voor ons werk. Maar voordat wij ermee aan de slag gaan kijken we vooral naar mogelijk betere alternatieven.",
-          link: "/werkwijze/onderzoek-en-advies"
+          link: "/werkwijze"
         },
         {
           id: 2,
           image: imageUrl('/images/220330-Secuur-BV-Werkwijze-Uitvoering-1.jpg'),
           title: "De uitvoering",
           excerpt: "Wij voeren de werkzaamheden altijd in samenwerking uit. Daarbij zullen we overlast voorkomen of tenminste beperken. Onze werkzaamheden zijn bovendien via een digitaal logboek direct in beeld te volgen.",
-          link: "/werkwijze/de-uitvoering"
+          link: "/werkwijze"
         },
         {
           id: 3,
           image: imageUrl('/images/Het-Eindrapport-1920x1080-1-1.jpg'),
           title: "Het eindrapport",
           excerpt: "Het eindrapport dat uit ons logboek komt is ook voorzien van alle certificaten en kan direct aan het bevoegd gezag worden voorgelegd.",
-          link: "/werkwijze/het-eindrapport"
+          link: "/werkwijze"
         }
       ]
     },

@@ -1,0 +1,89 @@
+.werkwijze-page {
+  background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 40%, #f9f9f9 100%);
+}
+
+.werkwijze-header {
+  background: linear-gradient(135deg, rgba(29, 30, 28, 0.96), rgba(49, 49, 49, 0.92));
+  color: #fff;
+  border-bottom: 4px solid #f06923;
+}
+
+.werkwijze-header h1,
+.werkwijze-header .subtitle {
+  color: #fff;
+}
+
+.werkwijze-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.werkwijze-header .subtitle {
+  max-width: 760px;
+  font-size: 1.08rem;
+  opacity: 0.94;
+  margin: 0;
+}
+
+.werkwijze-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.werkwijze-flow {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.werkwijze-block {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-left: 4px solid #f06923;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.06);
+}
+
+.werkwijze-step {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: #f06923;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.werkwijze-block-content h2 {
+  margin-bottom: 0.5rem;
+  color: #313131;
+  font-size: 1.35rem;
+}
+
+.werkwijze-block-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .werkwijze-content {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .werkwijze-block {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .werkwijze-step {
+    margin-top: 0;
+  }
+}
