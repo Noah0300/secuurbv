@@ -11,7 +11,9 @@ export default function Footer() {
             {/* Left Section - Company Info */}
             <div className="footer-section footer-about">
               <div className="company-logo-text">
-                <img src="/secuurbv/images/Secuur-Beeldmerk.png" alt="Secuur BV Logo" className="footer-logo" />
+                <Link to="/">
+                  <img src="/secuurbv/images/Secuur-Beeldmerk.png" alt="Secuur BV Logo" className="footer-logo" />
+                </Link>
               </div>
               <p>
                 <strong>Secuur Brandveiligheid B.V.</strong><br />
@@ -50,7 +52,19 @@ export default function Footer() {
                 Secuur Brandveiligheid B.V. is een<br />
                 <strong>onderdeel van</strong>
               </p>
-              <img src="/secuurbv/images/METZ-logo-new-wit-600x202-1.png" alt="Metz Verbouw" className="metz-logo" />
+              <a href="https://metz-nederland.nl/" target="_blank" rel="noopener noreferrer">
+                <img src="/secuurbv/images/METZ-logo-new-wit-600x202-1.png" alt="Metz Verbouw" className="metz-logo" />
+              </a>
+            </div>
+
+            {/* Social Media Section */}
+            <div className="footer-section footer-social">
+              <h4>Volg Ons</h4>
+              <div className="social-icons">
+                <a href="https://nl.linkedin.com/company/secuur-brandveiligheid" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                  <img src="/secuurbv/images/LinkedIn_icon.svg.webp" alt="LinkedIn" className="social-icon" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

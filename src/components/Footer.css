@@ -14,7 +14,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
 }
 
@@ -58,10 +58,21 @@
   margin-bottom: 1.5rem;
 }
 
+.company-logo-text a {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .footer-logo {
   height: 50px;
   width: auto;
   margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-logo:hover {
+  opacity: 0.8;
 }
 
 .footer-about p {
@@ -113,6 +124,35 @@
   height: 60px;
   width: auto;
   object-fit: contain;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.metz-logo:hover {
+  opacity: 0.8;
+}
+
+/* Social Media Section */
+.footer-social {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* Footer Bottom */
@@ -141,7 +181,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 }
