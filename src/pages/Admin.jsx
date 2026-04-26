@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { siteData } from '../data/siteData';
+import Seo from '../components/Seo';
 import './Admin.css';
 
 export default function Admin() {
@@ -61,6 +62,12 @@ export default function Admin() {
 
   return (
     <div className="admin-container">
+      <Seo
+        title="Admin"
+        description="Beheeromgeving van Secuur Brandveiligheid."
+        noIndex={true}
+      />
+
       <div className="admin-sidebar">
         <h2>Admin Panel</h2>
         <p className="admin-subtitle">Manage website content</p>

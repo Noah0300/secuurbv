@@ -57,10 +57,35 @@ export const siteData = {
         },
         {
           id: 3,
-          image: imageUrl('/images/Het-Eindrapport-1920x1080-1-1.jpg'),
+          image: imageUrl('/images/220330-Secuur-BV-Werkwijze-Eindrapport-1-1.jpg'),
           title: "Het eindrapport",
           excerpt: "Het eindrapport dat uit ons logboek komt is ook voorzien van alle certificaten en kan direct aan het bevoegd gezag worden voorgelegd.",
           link: "/werkwijze"
+        }
+      ]
+    },
+
+    linkedin: {
+      title: "LinkedIn updates",
+      subtitle: "De 3 meest recente posts van Secuur Brandveiligheid op LinkedIn",
+      posts: [
+        {
+          id: 1,
+          label: "Meest recent",
+          sourceUrl: "https://nl.linkedin.com/posts/secuur-brandveiligheid_scl-safetycultureladder-vca-activity-7442552979058102272-gi1H",
+          embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7442552979058102272"
+        },
+        {
+          id: 2,
+          label: "Daarvoor",
+          sourceUrl: "https://nl.linkedin.com/posts/secuur-brandveiligheid_brandveiligheid-bouwkundigbrandveiligheid-activity-7431685966542807040-S838",
+          embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7431685966542807040"
+        },
+        {
+          id: 3,
+          label: "Recent",
+          sourceUrl: "https://nl.linkedin.com/posts/secuur-brandveiligheid_brandveiligheid-samenwerking-nieuwjaar-activity-7414581231348105216-wiQo",
+          embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7414581231348105216"
         }
       ]
     },
@@ -129,36 +154,42 @@ export const siteData = {
   projects: [
     {
       id: 1,
+      slug: "ziekenhuis-erasmus-mc",
       title: "Ziekenhuis Erasmus MC",
       image: imageUrl('/images/220330-Secuur-BV-Projecten-Erasmus.jpg'),
       excerpt: "Met het Erasmus MC hebben wij een contract gesloten, om gedurende 10 jaar alle bouwkundig onderhoud te plegen en storingen te verhelpen.",
-      content: "Bij het grootste ziekenhuis van Nederland werken wij gezamenlijk aan het onderhoud van alle brandveiligheidsvoorzieningen. Het Erasmus MC is een groot ziekenhuis met verschillende locaties, waar dagelijks veel patiënten en bezoekers komen. Daarom is het uiterst belangrijk dat alle brandveiligheidsmaatregelen volledig functionaal zijn. Wij hebben een 10-jarig contract met het ziekenhuis waarbij wij alle bouwkundige brandveiligheid onderhouden en storingen onmiddellijk verhelpen.",
+      content: "Met het Erasmus MC hebben wij een contract gesloten, om gedurende 10 jaar alle bouwkundig onderhoud te plegen en storingen te verhelpen. Het Erasmus MC is voortdurend in ontwikkeling om aan de veranderende zorgwensen en -eisen te kunnen blijven voldoen. Daardoor vinden er continu verbouwingen plaats. Als een verbouwing aanpassingen in de infrastructuur van leidingen en bekabeling tot gevolg heeft, dan krijgt de brandveiligheid daarin direct extra aandacht. Jaarlijks gaat het totaal om zo'n 500 mutaties.",
       link: "/projecten/ziekenhuis-erasmus-mc"
     },
     {
       id: 2,
+      slug: "parkeergarage-capelle-aan-den-ijssel",
       title: "Parkeergarage Capelle aan den IJssel",
       image: imageUrl('/images/220330-Secuur-BV-Projecten-Capelle.jpg'),
       excerpt: "De oudere parkeergarage in Capelle aan den IJssel was weliswaar nog niet afgeschreven, maar de plafonds vertoonden slijtage waardoor er instortingsgevaar dreigde.",
-      content: "De parkeergarage in Capelle aan den IJssel was gebouwd in de jaren negentig. Na ruim 20 jaar waren echter de betonnen kastplafonds ernstig gehavend. De spanten vertoonden roest en er was instortingsgevaar. Door een slimme oplossing met een ondersteunende constructie hebben we voorkomen dat de hele parkeergarage gesloten moest worden. In plaats daarvan konden we gefaseerd de plafonds vervangen en saneren.",
-      link: "/projecten/parkeergarage-capelle"
+      content: "De oudere parkeergarage in Capelle aan den IJssel was weliswaar nog niet afgeschreven, maar de plafonds vertoonden slijtage waardoor er instortingsgevaar dreigde. Die plafonds hebben wij verwijderd. Onder het eerste, verborgen plafond bevonden zich echter diverse leidingen. In een totale periode van 6 weken hebben wij de brandvertraging in 20 fases uitgevoerd en zijn er 375 situaties verbeterd.",
+      link: "/projecten/parkeergarage-capelle-aan-den-ijssel"
     }
   ],
 
   // Over Ons Page
   overOns: {
     title: "Over Secuur BV",
-    intro: "Secuur Brandveiligheid B.V. is een jong en ambitieus bedrijf dat zich richt op het bieden van totaaloplossingen op het gebied van passieve en bouwkundige brandveiligheid.",
+    intro: "Secuur Brandveiligheid BV is specialist in passieve en bouwkundige brandveiligheid voor elk type pand.",
     sections: [
       {
-        title: "Vakmanschap",
-        content: "Wij zijn Secuur Brandveiligheid BV. Wij zijn gespecialiseerd in passieve en bouwkundige brandveiligheid in elk pand. Wij zijn een zusterbedrijf van Metz Nederland BV. Dat is te zien in de manier waarop wij projecten aanpakken en uitvoeren. Wij zorgen voor een optimale samenwerking en een maximale informatievoorziening aan alle betrokkenen. Wij houden meer dan anderen rekening met de omgeving waarin wij uw opdracht uitvoeren.\n\nBij ons werken uitsluitend vakmensen, die weten waar het om gaat als het brandveiligheid betreft. Naast onze kundige uitvoerende collega's hebben wij onze eigen technische adviseurs. Samen met bijvoorbeeld de leveranciers van goedgekeurde en gecertificeerde materialen weten wij exact wat er nodig is om veiligheid een tijd te geven. En als dat nodig is, dan hebben we altijd zeer korte lijnen met onze adviseurs.",
+        title: "Vakmensen",
+        content: "Bij ons werken uitsluitend vakmensen met verstand van brandveiligheid. Samen met onze technische adviseurs en leveranciers van goedgekeurde en gecertificeerde materialen zorgen wij voor de juiste oplossing in iedere situatie. Dankzij korte lijnen kunnen wij snel schakelen.",
         image: imageUrl('/images/220330-Secuur-BV-Over-ons-Vakmensen.jpg')
       },
       {
-        title: "Materialen en Kwaliteit",
-        content: "Op alle materialen en op alle bouwkundige onderdelen waar dat nodig of gewenst is kunnen wij brandvertragende middelen aanbrengen. Vloeren, plafonds, muren, draagconstructies, het zijn allemaal onderdelen in een pand die door brand aangetast kunnen worden. Wij werken daarom uitsluitend met gespecialiseerde én gecertificeerde materialen. Alleen dan realiseer je dat veiligheid een tijd krijgt, variërend van 30 minuten tot wel een paar uur. Tijd die mensen nodig hebben om in veiligheid te kunnen komen.\n\nWij zijn gecertificeerd voor de kwaliteitssystemen ISO 9001 en 14001 en beschikken over het VCA* certificaat. Daarmee tonen wij voor een belangrijk deel aan, dat kwaliteit in ons werk onze basis is. Maar de belangrijkste kwaliteit zit 'm natuurlijk vooral in onze werkwijze, waarbij wij volledig opgaan in de omgeving waarin wij ons werk moeten doen zodat wij mogelijke overlast tot een minimum beperken.",
+        title: "Materialen",
+        content: "Wij brengen brandvertragende middelen aan op bouwkundige onderdelen zoals vloeren, plafonds, muren en draagconstructies. Daarbij werken wij alleen met gespecialiseerde en gecertificeerde materialen. Zo creeren we extra tijd om een pand veilig te kunnen verlaten.",
         image: imageUrl('/images/220330-Secuur-BV-Over-ons-Materialen.jpg')
+      },
+      {
+        title: "Kwaliteit",
+        content: "Wij zijn gecertificeerd volgens ISO 9001, ISO 14001 en VCA*. Kwaliteit, veiligheid en zorgvuldigheid vormen de basis van ons werk. Daarbij stemmen wij onze uitvoering altijd af op de omgeving, zodat overlast zoveel mogelijk beperkt blijft."
       }
     ],
     processSteps: [
@@ -190,12 +221,12 @@ export const siteData = {
     sections: [
       {
         title: "Veiligheid heeft een tijd",
-        content: "Brand. Je moet er niet aan denken, toch? Juist wel! In Nederland zijn er jaarlijks ruim 100.000 branden. Dat zijn er bijna 180 per dag. Het kan iedereen, altijd en overal overkomen. Wat de oorzaak ook is, de gevolgen van een brand, materieel, financieel en vooral emotioneel, zijn vaak enorm. Juist daarom moet je er wél aan denken. Niet alleen om het te voorkomen, maatregelen die de gevolgen beperken zijn net zo belangrijk. Als het om mensenlevens gaat telt iedere seconde. Daarom biedt Secuur brandvertragende middelen die de bewoners en gebruikers van een pand meer tijd geven om veilig weg te komen. Zo geven wij veiligheid een tijd.",
+        content: "Brand kan iedereen, altijd en overal treffen. De gevolgen zijn vaak groot: materiele schade, financiele impact en vooral veel emotionele onrust. Daarom is het belangrijk om niet alleen aandacht te hebben voor het voorkomen van brand, maar ook voor het beperken van de gevolgen als het toch misgaat.\n\nBrand ontwikkelt zich vaak sneller dan hulpdiensten ter plaatse kunnen zijn. In enkele minuten kan een beginnende brand uitgroeien tot een levensgevaarlijke situatie.",
         image: imageUrl('/images/220330-Secuur-BV-Veiligheid-Visual-1.jpg')
       },
       {
-        title: "Brand is sneller dan de brandweer",
-        content: "Brand grijpt doorgaans razendsnel om zich heen. Uit een onderzoek door TNO/Efectis (centrum voor brandveiligheid) is gebleken, dat een klein brandje in een prullenmand al snel een grote uitslaande brand kan worden. Vaak is het een kwestie van slechts enkele minuten.\n\nDe gemiddelde aanrijtijd van de brandweer bedraagt een klein kwartier. Brand daarentegen breidt zich vaak al binnen een paar minuten uit. Je kan daarmee zeggen, dat brand sneller is dan de brandweer. Daarom is het zo belangrijk dat alle brandbare materialen zijn bewerkt met brandvertragende middelen. Vloeren, draagconstructies, muren, plafonds, het zijn allemaal onderdelen van een pand die bij een brand snel aangetast worden.\n\nDankzij onze brandvertragende middelen geef je mensen in plaats van een paar minuten soms wel een paar uur de tijd om zichzelf in veiligheid te brengen.\n\nBrand. Je moet er juist wel aan denken. Brandvertragende middelen redden namelijk mensenlevens.",
+        title: "Bescherming die tijd geeft",
+        content: "Juist daarom is het van groot belang dat bouwkundige onderdelen van een pand, zoals vloeren, muren, plafonds en draagconstructies, voldoende brandvertragend zijn beschermd.\n\nSecuur brengt brandvertragende middelen aan die ervoor zorgen dat vuur zich minder snel verspreidt en constructies langer hun functie behouden. Daarmee ontstaat kostbare extra tijd voor bewoners, gebruikers, clienten of patienten om veilig het pand te verlaten.",
         image: imageUrl('/images/220330-Secuur-BV-Veiligheid-visual-2.jpg')
       }
     ]

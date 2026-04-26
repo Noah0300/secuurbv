@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import FinalCtaBanner from '../components/FinalCtaBanner';
+import Seo from '../components/Seo';
 import './Werkwijze.css';
 
 export default function Werkwijze() {
@@ -28,7 +29,28 @@ export default function Werkwijze() {
 
   return (
     <div className="werkwijze-page">
-      <section className="section page-header werkwijze-header">
+      <Seo
+        title="Onze Werkwijze"
+        description="Ontdek de werkwijze van Secuur Brandveiligheid: onderzoek, plan van aanpak, uitvoering, kwaliteitsborging en een compleet eindrapport."
+        keywords="werkwijze brandveiligheid, onderzoek brandveiligheid, plan van aanpak brandveiligheid, eindrapport brandveiligheid"
+        breadcrumbItems={[
+          { name: 'Home', path: '/' },
+          { name: 'Werkwijze', path: '/werkwijze' }
+        ]}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Werkwijze brandveiligheidsprojecten',
+          serviceType: 'Onderzoek, uitvoering en rapportage brandveiligheid',
+          provider: {
+            '@type': 'Organization',
+            name: 'Secuur Brandveiligheid B.V.'
+          },
+          areaServed: 'Nederland'
+        }}
+      />
+
+      <section className="section werkwijze-header">
         <div className="container">
           <h1>Onze werkwijze</h1>
           <p className="subtitle">
@@ -54,14 +76,7 @@ export default function Werkwijze() {
         </div>
       </section>
 
-      <section className="section final-cta-section">
-        <div className="container">
-          <h2>Extra tijd, elke seconde telt.</h2>
-          <Link to="/contact" className="btn btn-large">
-            Neem contact op
-          </Link>
-        </div>
-      </section>
+      <FinalCtaBanner />
     </div>
   );
 }

@@ -1,32 +1,37 @@
 .werkwijze-page {
-  background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 40%, #f9f9f9 100%);
+  background: #ffffff;
 }
 
-.werkwijze-header {
-  background: linear-gradient(135deg, rgba(29, 30, 28, 0.96), rgba(49, 49, 49, 0.92));
-  color: #fff;
+.section.werkwijze-header {
+  background: #ffffff;
+  color: var(--heading-color);
   border-bottom: none;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 6px;
 }
 
 .werkwijze-header h1,
 .werkwijze-header .subtitle {
-  color: #fff;
+  color: var(--heading-color);
 }
 
 .werkwijze-header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #FF6600;
+  text-align: center;
 }
 
 .werkwijze-header .subtitle {
-  max-width: 760px;
+  color: var(--text-color);
+  max-width: 900px;
   font-size: 1.08rem;
-  opacity: 0.94;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.werkwijze-content {
-  padding-top: 0;
+.section.werkwijze-content {
+  padding-top: 16px;
   padding-bottom: 70px;
 }
 
@@ -74,8 +79,18 @@
 }
 
 @media (max-width: 768px) {
-  .werkwijze-content {
-    padding-top: 45px;
+  .section.werkwijze-header {
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+
+  .werkwijze-header h1 {
+    margin-bottom: 6px;
+    padding-bottom: 8px;
+  }
+
+  .section.werkwijze-content {
+    padding-top: 12px;
     padding-bottom: 45px;
   }
 

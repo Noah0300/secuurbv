@@ -129,6 +129,10 @@
   text-align: justify;
 }
 
+.kwaliteit-inline-heading {
+  margin-top: 2.5rem;
+}
+
 .content-image {
   display: flex;
   align-items: center;

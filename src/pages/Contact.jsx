@@ -1,11 +1,44 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
+import Seo from '../components/Seo';
 import '../pages/Contact.css';
 
 export default function Contact() {
   return (
     <div>
-      <section className="section contact">
+      <Seo
+        title="Contact"
+        description="Neem contact op met Secuur Brandveiligheid in Schiedam voor advies en uitvoering in passieve en bouwkundige brandveiligheid. We helpen zorginstellingen, corporaties en aannemers met effectieve brandvertragende oplossingen."
+        keywords="contact brandveiligheid, Secuur Brandveiligheid, brandveiligheid advies Schiedam, contact Secuur"
+        breadcrumbItems={[
+          { name: 'Home', path: '/' },
+          { name: 'Contact', path: '/contact' }
+        ]}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Advies en contact brandveiligheid',
+          serviceType: 'Contact en advies brandveiligheid',
+          provider: {
+            '@type': 'Organization',
+            name: 'Secuur Brandveiligheid B.V.'
+          },
+          areaServed: 'Nederland',
+          url: 'https://www.secuurbv.nl/contact',
+          description: 'Contact opnemen met Secuur Brandveiligheid voor advies en uitvoering op het gebied van passieve en bouwkundige brandveiligheid.'
+        }}
+      />
+
+      <section className="section contact-header-section">
+        <div className="container">
+          <h1>Neem contact op met Secuur BV</h1>
+          <p className="subtitle contact-intro-text">
+            Wil je weten hoe wij in jouw pand kunnen bijdragen aan brandveiligheid en extra tijd om veilig weg te komen? Neem contact met ons op via telefoon of e-mail.
+          </p>
+        </div>
+      </section>
+
+      <section className="section contact contact-main-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6">

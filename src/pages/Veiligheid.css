@@ -2,8 +2,32 @@
    VEILIGHEID PAGE - Professional Design
    ============================================ */
 
-.veiligheid-sections {
-  padding: 4rem 0;
+.section.veiligheid-header {
+  background: #ffffff;
+  color: var(--heading-color);
+  border-bottom: none;
+  padding-top: 30px;
+  padding-bottom: 12px;
+}
+
+.veiligheid-header h1 {
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  padding-bottom: 14px;
+  border-bottom: 3px solid #FF6600;
+  text-align: center;
+}
+
+.veiligheid-header .subtitle {
+  color: var(--text-color);
+  max-width: 900px;
+  font-size: 1.08rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section.veiligheid-sections {
+  padding: 0 0 4rem;
   background: white;
 }
 
@@ -233,6 +257,16 @@
 }
 
 @media (max-width: 768px) {
+  .section.veiligheid-header {
+    padding-top: 22px;
+    padding-bottom: 8px;
+  }
+
+  .veiligheid-header h1 {
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+  }
+
   .veiligheid-section {
     grid-template-columns: 1fr;
     gap: 2rem;

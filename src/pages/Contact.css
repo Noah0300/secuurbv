@@ -1,5 +1,32 @@
 /* Contact Page Styles */
 
+.section.contact-header-section {
+  background: #ffffff;
+  color: var(--heading-color);
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+.contact-header-section h1 {
+  color: var(--heading-color);
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #FF6600;
+  text-align: center;
+}
+
+.contact-header-section .contact-intro-text {
+  color: var(--text-color);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.section.contact-main-section {
+  padding-top: 18px;
+}
+
 .contact {
   background-color: white;
 }
@@ -139,6 +166,20 @@
 }
 
 @media (max-width: 768px) {
+  .section.contact-header-section {
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+
+  .contact-header-section h1 {
+    margin-bottom: 6px;
+    padding-bottom: 8px;
+  }
+
+  .section.contact-main-section {
+    padding-top: 12px;
+  }
+
   .contact-info {
     margin-top: 30px;
   }

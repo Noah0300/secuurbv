@@ -1,14 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { siteData } from '../data/siteData';
+import FinalCtaBanner from '../components/FinalCtaBanner';
+import Seo from '../components/Seo';
 import '../pages/Home.css';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState(0);
-  const { company, homepage } = siteData;
+  const { homepage } = siteData;
 
   return (
     <div>
+      <Seo
+        title="Home"
+        description="Secuur Brandveiligheid BV is specialist in passieve en bouwkundige brandveiligheid. Wij verzorgen onderzoek, uitvoering en rapportage met minimale overlast voor zorginstellingen, corporaties en aannemers."
+        keywords="passieve brandveiligheid, bouwkundige brandveiligheid, brandvertragende oplossingen, brandveiligheid Schiedam, Secuur Brandveiligheid"
+        breadcrumbItems={[{ name: 'Home', path: '/' }]}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Passieve en bouwkundige brandveiligheid',
+          provider: {
+            '@type': 'Organization',
+            name: 'Secuur Brandveiligheid B.V.'
+          },
+          serviceType: 'Brandveiligheidsadvies en uitvoering',
+          areaServed: 'Nederland',
+          url: 'https://www.secuurbv.nl',
+          description: 'Onderzoek, advies en uitvoering van passieve en bouwkundige brandveiligheid met minimale overlast.',
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Brandveiligheidsdiensten',
+            itemListElement: [
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Onderzoek en advies' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Uitvoering brandvertragende maatregelen' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Eindrapportage en certificering' } }
+            ]
+          }
+        }}
+      />
+
       {/* Hero Section */}
       <section className="hero-section">
         {/* YouTube Video Background */}
@@ -33,7 +63,7 @@ export default function Home() {
       <section className="section intro-section">
         <div className="container">
           <p className="intro-text">
-            Wij zijn <strong>{company.name}</strong>. Wij zijn gespecialiseerd in passieve en bouwkundige brandveiligheid in elk pand. Wij zijn een zusterbedrijf van <em>Metz Nederland BV</em>. Dat is te zien in de manier waarop wij projecten aanpakken en uitvoeren. Wij zorgen voor een optimale samenwerking en een maximale informatievoorziening aan alle betrokkenen. Wij houden meer dan anderen rekening met de omgeving waarin wij uw opdracht uitvoeren.
+            Wij zijn <strong>Secuur Brandveiligheid BV</strong>, specialist in passieve en bouwkundige brandveiligheid voor elk type pand. Als zusterbedrijf van <a href="https://metz-nederland.nl/" target="_blank" rel="noopener noreferrer" className="intro-link">Metz Nederland BV</a> delen wij dezelfde zorgvuldige en professionele aanpak in voorbereiding, uitvoering en samenwerking. Wij zorgen voor optimale afstemming en heldere informatie voor alle betrokkenen. Daarbij hebben wij nadrukkelijk oog voor de omgeving waarin wij uw opdracht uitvoeren.
           </p>
         </div>
       </section>
@@ -43,6 +73,22 @@ export default function Home() {
         <div className="container">
           <h2>{homepage.news.title}</h2>
           <p className="section-subtitle">{homepage.news.subtitle}</p>
+
+          <div className="linkedin-grid">
+            {homepage.linkedin.posts.map((post) => (
+              <article key={post.id} className="linkedin-card">
+                <iframe
+                  className="linkedin-embed"
+                  src={post.embedUrl}
+                  title="LinkedIn post van Secuur Brandveiligheid"
+                  loading="lazy"
+                ></iframe>
+                <a href={post.sourceUrl} target="_blank" rel="noopener noreferrer" className="linkedin-link">
+                  Open op LinkedIn
+                </a>
+              </article>
+            ))}
+          </div>
           
           {/* Three separate sections instead of tabs */}
           <div className="werkwijze-grid">
@@ -100,25 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section 
-        className="section final-cta-section"
-        style={{
-          backgroundImage: `url(${homepage.safetySection.backgroundImage})`
-        }}
-      >
-        <div className="final-cta-inner">
-          <div className="final-cta-content">
-            <h2>
-              Extra tijd,<br />
-              <strong>Wanneer elke seconde telt.</strong>
-            </h2>
-            <Link to="/contact" className="btn btn-large btn-primary">
-              Neem contact op
-            </Link>
-          </div>
-        </div>
-      </section>
+      <FinalCtaBanner />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { siteData } from '../data/siteData';
+import FinalCtaBanner from '../components/FinalCtaBanner';
+import Seo from '../components/Seo';
 import './Veiligheid.css';
 
 export default function Veiligheid() {
@@ -8,6 +9,38 @@ export default function Veiligheid() {
 
   return (
     <div>
+      <Seo
+        title="Veiligheid"
+        description="Secuur brengt brandvertragende middelen aan op vloeren, muren, plafonds en draagconstructies voor extra tijd bij brand en veilige ontruiming. Vraag direct advies aan voor uw gebouw."
+        keywords="brandvertragende oplossingen, passieve brandveiligheid, brandveiligheid gebouwen, veilige ontruiming"
+        breadcrumbItems={[
+          { name: 'Home', path: '/' },
+          { name: 'Veiligheid', path: '/veiligheid' }
+        ]}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Brandvertragende bescherming',
+          serviceType: 'Bescherming van vloeren, muren, plafonds en draagconstructies',
+          provider: {
+            '@type': 'Organization',
+            name: 'Secuur Brandveiligheid B.V.'
+          },
+          areaServed: 'Nederland',
+          url: 'https://www.secuurbv.nl/veiligheid',
+          description: 'Brandvertragende oplossingen voor vloeren, muren, plafonds en draagconstructies met extra tijd voor veilige ontruiming.'
+        }}
+      />
+
+      <section className="section veiligheid-header">
+        <div className="container">
+          <h1>Onze veiligheid</h1>
+          <p className="subtitle">
+            Brandvertragende oplossingen voor vloeren, muren, plafonds en draagconstructies met extra tijd voor veilige ontruiming.
+          </p>
+        </div>
+      </section>
+
       {/* Veiligheid Sections */}
       <section className="section veiligheid-sections">
         <div className="container">
@@ -25,17 +58,7 @@ export default function Veiligheid() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="veiligheid-cta">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Extra tijd, <span className="highlight">wanneer elke seconde telt</span></h2>
-            <Link to="/contact" className="btn btn-primary">
-              Neem contact op
-            </Link>
-          </div>
-        </div>
-      </section>
+      <FinalCtaBanner />
     </div>
   );
 }

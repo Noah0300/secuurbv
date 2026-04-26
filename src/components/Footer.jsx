@@ -26,8 +26,8 @@ export default function Footer() {
             <div className="footer-section footer-juridisch">
               <h4>Juridisch</h4>
               <ul>
-                <li><a href="/wp-content/uploads/2022/02/algemene-inkoopvoorwaarden-Secuur-16-06-2020.pdf" target="_blank" rel="noopener noreferrer">Algemene inkoopvoorwaarden</a></li>
-                <li><a href="/wp-content/uploads/2022/02/algemene-verkoopvoorwaarden-Secuur-16-06-2020.pdf" target="_blank" rel="noopener noreferrer">Algemene verkoopvoorwaarden</a></li>
+                <li><a href={`${process.env.PUBLIC_URL}/voorwaarden/algemene-inkoopvoorwaarden.pdf`} target="_blank" rel="noopener noreferrer">Algemene inkoopvoorwaarden</a></li>
+                <li><a href={`${process.env.PUBLIC_URL}/voorwaarden/algemene-verkoopvoorwaarden.pdf`} target="_blank" rel="noopener noreferrer">Algemene verkoopvoorwaarden</a></li>
                 <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               </ul>
             </div>
@@ -49,8 +49,7 @@ export default function Footer() {
             {/* Right Section - Partnership */}
             <div className="footer-section footer-partnership">
               <p className="partnership-text">
-                Secuur Brandveiligheid B.V. is een<br />
-                <strong>onderdeel van</strong>
+                Secuur Brandveiligheid B.V. is een zusterbedrijf van
               </p>
               <a href="https://metz-nederland.nl/" target="_blank" rel="noopener noreferrer">
                 <img src="/secuurbv/images/METZ-logo-new-wit-600x202-1.png" alt="Metz Verbouw" className="metz-logo" />

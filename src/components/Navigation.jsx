@@ -13,8 +13,8 @@ export default function Navigation() {
   const menuItems = [
     { path: '/', label: 'Home' },
     { path: '/over-ons', label: 'Over ons' },
-    { path: '/werkwijze', label: 'Werkwijze' },
     { path: '/veiligheid', label: 'Veiligheid' },
+    { path: '/werkwijze', label: 'Werkwijze' },
     { path: '/projecten', label: 'Projecten' },
     { path: '/vacatures', label: 'Vacatures' }
   ];

@@ -1,9 +1,20 @@
 import React from 'react';
+import Seo from '../components/Seo';
 import './PrivacyPolicy.css';
 
 export default function PrivacyPolicy() {
   return (
-    <section className="section">
+    <section className="section privacy-policy-section">
+      <Seo
+        title="Privacy policy"
+        description="Lees het privacybeleid van Secuur Brandveiligheid over verwerking van persoonsgegevens, cookies en rechten van bezoekers."
+        keywords="privacy policy Secuur Brandveiligheid, privacyverklaring, cookies, persoonsgegevens"
+        breadcrumbItems={[
+          { name: 'Home', path: '/' },
+          { name: 'Privacy Policy', path: '/privacy-policy' }
+        ]}
+      />
+
       <div className="container">
         <h1>Privacy Policy</h1>
         
